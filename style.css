@@ -1,0 +1,170 @@
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*------Стили-----------------------*/
+.header-wrap {
+  height: 52px;
+  background-color: rgb(58, 58, 58);
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.goods-search {
+  width: 200px;
+  height: 30px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.search-button {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.header-button {
+  width: 100px;
+  height: 30px;
+  
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.cart-button {
+  background-color: rgb(248, 207, 71);
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.header-button:hover {
+  background-color: rgb(179, 179, 179);
+  color: white;
+}
+.cart-button:hover {
+  background-color: rgb(194, 149, 1);
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goods-item {
+  width: 250px;
+  height: 300px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(245, 244, 244);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.goods-item:hover {
+  box-shadow: 0 0 15px rgba(172, 172, 172, 0.5);
+}
+
+.product__add-to-cart {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(172, 172, 172);
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+.product__add-to-cart:hover {
+  background-color: rgb(172, 172, 172);
+  color: white;
+}
+
+.text-sum {
+  color: rgb(70, 70, 70);
+  font-size: larger;
+  margin-top: 10px;
+  text-align: center;
+}
